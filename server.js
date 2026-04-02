@@ -18,11 +18,11 @@ app.use((req, res, next) => {
 });
 
 app.get("/", async (req, res) => {
-  const { file } = req.query;
+  // const { file } = req.query;
 
-  if (!file) {
-    return res.status(400).send("Missing required query parameter: file");
-  }
+  // if (!file) {
+  //   return res.status(400).send("Missing required query parameter: file");
+  // }
 
   try {
     const html = await fs.readFile(VIEWER_HTML_PATH, "utf8");
