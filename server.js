@@ -7,7 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const VIEWER_HTML_PATH = path.join(__dirname, "viewer2.html");
+const VIEWER_HTML_PATH = path.join(__dirname, "viewer.html");
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
